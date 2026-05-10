@@ -1,0 +1,39 @@
+product_id,product_name,category,price_usd,calories,is_seasonal,customizable,available_sizes
+SKU-0001,Pike Place Roast,Hot Beverages,3.45,260.0,False,True,Tall/Grande/Venti
+SKU-0002,Caffe Latte,Hot Beverages,4.95,190.0,False,True,Tall/Grande/Venti
+SKU-0003,Cappuccino,Hot Beverages,4.95,120.0,False,True,Tall/Grande/Venti
+SKU-0004,Caffe Americano,Hot Beverages,3.95,15.0,False,True,Tall/Grande/Venti
+SKU-0005,Flat White,Hot Beverages,5.25,220.0,False,True,Tall/Grande/Venti
+SKU-0006,Espresso,Hot Beverages,2.95,10.0,False,True,Tall/Grande/Venti
+SKU-0007,Caramel Macchiato,Hot Beverages,5.75,250.0,False,True,Tall/Grande/Venti
+SKU-0008,Pumpkin Spice Latte,Hot Beverages,5.95,380.0,True,True,Tall/Grande/Venti
+SKU-0009,Cold Brew,Cold Beverages,4.45,5.0,False,True,Tall/Grande/Venti
+SKU-0010,Nitro Cold Brew,Cold Beverages,5.25,5.0,False,True,Tall/Grande/Venti
+SKU-0011,Iced Caffe Latte,Cold Beverages,4.95,130.0,False,True,Tall/Grande/Venti
+SKU-0012,Iced Matcha Latte,Cold Beverages,5.25,200.0,False,True,Tall/Grande/Venti
+SKU-0013,Iced Brown Sugar Oat Shaken Espresso,Cold Beverages,5.95,120.0,False,True,Tall/Grande/Venti
+SKU-0014,Iced Caramel Macchiato,Cold Beverages,5.75,250.0,False,True,Tall/Grande/Venti
+SKU-0015,Caramel Frappuccino,Frappuccino,5.95,380.0,False,True,Tall/Grande/Venti
+SKU-0016,Mocha Frappuccino,Frappuccino,5.95,370.0,False,True,Tall/Grande/Venti
+SKU-0017,Vanilla Bean Frappuccino,Frappuccino,5.25,340.0,False,True,Tall/Grande/Venti
+SKU-0018,Java Chip Frappuccino,Frappuccino,6.25,460.0,False,True,Tall/Grande/Venti
+SKU-0019,Matcha Frappuccino,Frappuccino,5.75,420.0,False,True,Tall/Grande/Venti
+SKU-0020,Chai Tea Latte,Teavana,4.95,240.0,False,True,Tall/Grande/Venti
+SKU-0021,Green Tea Latte,Teavana,5.25,320.0,False,True,Tall/Grande/Venti
+SKU-0022,Peach Green Tea Lemonade,Teavana,4.75,140.0,False,True,Tall/Grande/Venti
+SKU-0023,Passion Tango Tea,Teavana,3.45,45.0,False,True,Tall/Grande/Venti
+SKU-0024,Butter Croissant,Food,3.45,240.0,False,False,Tall/Grande/Venti
+SKU-0025,Blueberry Muffin,Food,3.25,380.0,False,False,Tall/Grande/Venti
+SKU-0026,Spinach Feta Wrap,Food,6.45,290.0,False,False,Tall/Grande/Venti
+SKU-0027,Impossible Breakfast Sandwich,Food,6.95,420.0,False,False,Tall/Grande/Venti
+SKU-0028,Sous Vide Egg Bites,Food,6.45,310.0,False,False,Tall/Grande/Venti
+SKU-0029,Avocado Spread,Food,1.5,90.0,False,False,Tall/Grande/Venti
+SKU-0030,Banana Bread,Food,3.25,420.0,False,False,Tall/Grande/Venti
+SKU-0031,Starbucks Tumbler 24oz,Merchandise,24.95,,False,False,One Size
+SKU-0032,Starbucks Cold Cup 24oz,Merchandise,19.95,,False,False,One Size
+SKU-0033,Holiday Ornament Set,Merchandise,14.95,,True,False,One Size
+SKU-0034,Reusable Hot Cup,Merchandise,12.95,,False,False,One Size
+SKU-0035,Pike Place Ground Coffee 12oz,At-Home Coffee,10.95,,False,False,One Size
+SKU-0036,Veranda Blend K-Cups 10ct,At-Home Coffee,12.95,,False,False,One Size
+SKU-0037,Espresso Roast Whole Bean 12oz,At-Home Coffee,12.95,,False,False,One Size
+SKU-0038,Blonde Roast Capsules 10ct,At-Home Coffee,11.95,,False,False,One Size
