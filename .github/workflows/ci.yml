@@ -1,0 +1,60 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate test data
+        run: python data/synthetic/generate_data.py
+
+      - name: Build FAISS index
+        run: python scripts/build_index.py
+        env:
+          OPENAI_API_KEY: "test-key-not-used-in-unit-tests"
+          LLM_PROVIDER: openai
+
+      - name: Run tests
+        run: pytest tests/ -v --cov=. --cov-report=xml --ignore=tests/test_api.py
+        env:
+          OPENAI_API_KEY: "test-key-not-used-in-unit-tests"
+          LLM_PROVIDER: openai
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@v3
+        continue-on-error: true
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - run: pip install black flake8
+
+      - run: black --check --diff . --exclude="venv|__pycache__"
+
+      - run: flake8 . --max-line-length=100 --exclude=venv,__pycache__,.git

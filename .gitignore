@@ -1,0 +1,12 @@
+.env
+venv/
+__pycache__/
+*.pyc
+faiss_index/
+vectorstore/faiss_index/
+mlruns/
+.pytest_cache/
+htmlcov/
+*.egg-info/
+.DS_Store
+monitoring/feedback_log.jsonl
