@@ -3,7 +3,7 @@ langchain-community==0.2.16
 langchain-openai==0.1.23
 langchain-core==0.2.39
 langgraph==0.2.28
-faiss-cpu==1.7.4
+faiss-cpu==1.14.3
 sentence-transformers==3.0.1
 fastapi==0.115.0
 uvicorn==0.30.6
